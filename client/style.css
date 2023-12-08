@@ -1,0 +1,49 @@
+* {margin: 0;}
+
+.messages {
+	display: flex;
+	flex-direction: column;
+
+	padding-top: 27px;
+	box-sizing: border-box;
+
+	height: calc(100vh - 42px); height: calc(100dvh - 42px);
+
+	overflow-y: auto;
+}
+
+.messages > div {
+	display: flex; gap: 10px;
+
+	padding: 4px 8px;
+}
+.messages > div:nth-child(even) {background-color: rgba(0,0,0,.05);}
+
+.messages > div .user {color: gray;}
+
+.input {
+	display: flex;
+	padding: 5px;
+	background-color: black;
+
+	position: absolute;
+	bottom: 0; left: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.input input {flex-grow: 1; box-sizing: border-box; font-size: 18px;}
+.input button {font-size: 18px;}
+
+
+.status {
+	position: absolute;
+	top: 0; left: 50%;
+	transform: translateX(-50%);
+
+	padding: 2px 6px;
+	border-radius: 0 0 5px 5px;
+
+	box-shadow: 0 0 5px 0 #000;
+	background-color: #fff;
+}
